@@ -1,4 +1,4 @@
-# dino
+# Dino
 
 Zero-shot template matching with DINOv2 patch features.
 
