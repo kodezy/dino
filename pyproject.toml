@@ -1,0 +1,24 @@
+[project]
+name = "dino"
+version = "0.1.0"
+description = "Zero-shot DINOv2 template matching"
+requires-python = ">=3.13"
+dependencies = [
+    "numpy>=2.0",
+    "opencv-python-headless>=4.10",
+    "torch>=2.5",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["dino"]
+package-dir = { dino = "src" }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
